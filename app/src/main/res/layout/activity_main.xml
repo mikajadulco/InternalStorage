@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jadulco.internalstorage.MainActivity">
+
+    <EditText
+        android:id="@+id/et_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="type your message here"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save message"
+        android:layout_below="@+id/et_msg"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:onClick="saveInfo"
+        />
+
+    <Button
+        android:id="@+id/btn_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="display message"
+        android:layout_toRightOf="@id/btn_save"
+        android:layout_below="@+id/et_msg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="loadInfo"/>
+
+    <TextView
+        android:id="@+id/tv_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_save"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+</RelativeLayout>
